@@ -19,7 +19,7 @@ const UsersPage = async () => {
           Add a user
         </span>
       </Link>
-      <div className="mt-5 grid grid-cols-1 md:grid-cols-3 items-center justify-between gap-4">
+      <div className="mt-5 grid grid-cols-1 items-center justify-between gap-4 md:grid-cols-3">
         {users.map((user) => (
           <UserCard key={user._id} user={user}></UserCard>
         ))}
